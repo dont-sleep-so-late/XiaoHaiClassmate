@@ -1,0 +1,7 @@
+/* pages/calendar/index.wxss */
+.container {
+    width: 100%;
+}
+.container image{
+    width: 100%;
+}

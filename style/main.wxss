@@ -1,0 +1,12 @@
+@import "./colorui/animation.wxss";
+@import "./colorui/icon.wxss";
+@import "./colorui/main.wxss";
+@import "./reset.wxss";
+
+
+page {
+    --theme: #5DEFE5;
+    --backgroundColor: #fff;
+  
+    background-color: var(--backgroundColor);
+  }

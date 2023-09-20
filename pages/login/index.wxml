@@ -1,0 +1,20 @@
+<view class="container">
+    <view class="header">
+    <image src="/asset/imgs/logo@2x.png" mode="aspectFill"/>
+    </view>
+    <view class="login">
+        <view class="form-item">
+            <image src="/asset/imgs/用户.png" mode="aspectFill"/>
+            <input type="text" model:value="{{stuId}}" placeholder="请输入学号"/>
+        </view>
+        <view class="form-item">
+            <image src="/asset/imgs/分组 1-4.png" mode="aspectFill"/>
+            <input type="password" model:value="{{password}}" placeholder="请输入密码"/>
+        </view>
+        <view bindtap="switchCheckStatus" class="checkbox-item">
+            <checkbox class="theme" checked="{{saveCount}}"/>
+            <view class="margin-left-sm">记住账号密码(仅本地存储)</view>
+         </view>
+        <button  class="cu-btn lg" bind:tap="login">登录</button>
+    </view>
+</view>

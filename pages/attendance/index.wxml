@@ -1,0 +1,23 @@
+<cu-custom bgColor="bg-white" isBack="{{true}}" >
+    <view slot="content">全部考勤</view>
+    <view slot="backText">返回</view>
+</cu-custom>
+<view class="container">
+    <view class="header">
+    <view class="score-term">
+      <picker mode="selector" range="{{list}}" range-key="termName" value="{{termIndex}}" bindchange="changeTerm">
+        选择学期 <text class="cuIcon-unfold"></text>
+      </picker>
+    </view>
+    <view bindtap="update" class="update-btn">
+      <text class="cuIcon-refresh"></text>
+    </view>
+  </view>
+  <view class="attendance-list">
+    <view class="term-name">{{list[termIndex].termName}}</view>
+    <view class="list" wx:for="{{list[termIndex].attendance}}" wx:key="">
+        <view class="attendance-item">
+        </view>
+    </view>
+  </view>
+</view>
