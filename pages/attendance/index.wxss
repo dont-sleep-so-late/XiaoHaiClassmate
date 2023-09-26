@@ -63,3 +63,19 @@ page {
     margin-top: 26rpx;
     padding: 30rpx;
 }
+.list {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    border:1rpx solid #afafaf;
+    margin-top: 10rpx;
+    border-radius: 20rpx;
+}
+.attendance-item {
+    margin: 0 auto;
+    padding: 20rpx;
+}
+.detail {
+    margin: 0 auto;
+    margin-bottom: 20rpx;
+}

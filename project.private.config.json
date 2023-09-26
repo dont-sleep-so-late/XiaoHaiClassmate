@@ -9,6 +9,13 @@
         "miniprogram": {
             "list": [
                 {
+                    "name": "我的",
+                    "pathName": "pages/mine/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
                     "name": "课表",
                     "pathName": "pages/course/index",
                     "query": "",

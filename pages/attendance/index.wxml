@@ -15,8 +15,14 @@
   </view>
   <view class="attendance-list">
     <view class="term-name">{{list[termIndex].termName}}</view>
-    <view class="list" wx:for="{{list[termIndex].attendance}}" wx:key="">
-        <view class="attendance-item">
+    <view class="list"   wx:for="{{list[termIndex].attendanceList}}" wx:key="" bind:tap="getDetail" data-index="{{index}}">
+        <view class="attendance-item" >
+            <text>老师：{{item.teacher}}   </text>
+            <text>时间：{{item.date}}    </text>
+            <text>原因：{{item.reason}}</text>
+        </view>
+        <view class="detail">
+            查看详情
         </view>
     </view>
   </view>

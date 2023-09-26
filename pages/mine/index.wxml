@@ -1,4 +1,22 @@
 <cu-custom>
     <view slot="content">我的</view>
 </cu-custom>
-
+<view class="container">
+    <view class="header" bind:tap="getUserProfile">
+        <van-image
+        round
+        width="5rem"
+        height="5rem"
+        src="{{userInfo.avatarUrl}}"
+        />
+        <view class="info">
+            <view>
+                {{userInfo.username}}
+            </view>
+            <view bind:tap="edit">
+                编辑资料
+                <van-icon name="arrow" />
+            </view>
+        </view>
+    </view>
+</view>

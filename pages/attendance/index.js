@@ -1,6 +1,7 @@
 import {
     getAttendanceListRequest
 } from '../../api/main'
+const attendanceCacheKey = "attendance"
 Page({
 
     /**
@@ -18,12 +19,22 @@ Page({
         this.getList()
     },
     getList(){
-        const that = this
+        console.log();
+        const cache = wx.getStorageSync(attendanceCacheKey)
+        if (cache) {
+            this.setData({
+              list: cache,
+            })
+            return
+          }
+          this.updata()
+    },
+    updata(){
         getAttendanceListRequest().then(res => {
-            console.log(res.data);
-            that.setData({
+            this.setData({
                 list:res.data
             })
+            wx.setStorageSync(attendanceCacheKey, res.data)
         })
     },
     changeTerm(e) {
@@ -31,5 +42,12 @@ Page({
         this.setData({
           termIndex
         })
+      },
+      getDetail(e){
+        const index = e.currentTarget.dataset.index
+        const termIndex = this.data.termIndex
+        wx.navigateTo({
+            url: `/pages/attendance-detail/index?info=${JSON.stringify(this.data.list[termIndex].attendanceList[index])}`,
+          })
       }
 })

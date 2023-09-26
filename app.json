@@ -7,7 +7,9 @@
         "pages/mine/index",
         "pages/course-detail/index",
         "pages/attendance/index",
-        "pages/calendar/index"
+        "pages/calendar/index",
+        "pages/attendance-detail/index",
+        "pages/mine-edit/index"
     ],
     "window": {
         "backgroundTextStyle": "light",

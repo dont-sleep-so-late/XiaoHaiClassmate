@@ -57,7 +57,6 @@ Page({
     todayCourseList.sort((a, b) => {
       return a.section - b.section
     })
-    console.log(todayCourseList);
     this.setData({
       todayWeek,
       todayWeeks,

@@ -26,7 +26,7 @@ page{
 .header {
     display:flex;
     justify-content: center;
-    margin-top: 106rpx;
+    margin-top: 200rpx;
 }
 .header image {
     width: 288rpx;
