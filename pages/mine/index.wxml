@@ -2,21 +2,28 @@
     <view slot="content">我的</view>
 </cu-custom>
 <view class="container">
-    <view class="header" bind:tap="getUserProfile">
-        <van-image
-        round
-        width="5rem"
-        height="5rem"
-        src="{{userInfo.avatarUrl}}"
-        />
-        <view class="info">
-            <view>
-                {{userInfo.username}}
+    <view class="header">
+        <view class="user-info" bind:tap="getUserProfile">
+            <van-image
+            round
+            width="5rem"
+            height="5rem"
+            src="{{userInfo.avatarUrl}}"
+            />
+            <view class="info">
+                <view>
+                    {{userInfo.username}}
+                </view>
             </view>
-            <view bind:tap="edit">
+      </view>
+        <view class="toEdit" bind:tap="edit">
                 编辑资料
                 <van-icon name="arrow" />
-            </view>
         </view>
+    </view>
+    <view class="form-items">
+        <view class="item"><button>用户协议</button></view>
+        <view class="item"><button open-type="contact" bindcontact="handleContact">联系我们</button></view>
+        <view class="item"><button>关于</button></view>
     </view>
 </view>

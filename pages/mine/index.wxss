@@ -8,18 +8,27 @@ page {
     )
 }
 .header {
-    width: 100%;
+    width: 96%;
     height: 250rpx;
     display: flex;
     justify-content:space-between;
     align-items: center;
 }
+.user-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 van-image {
     margin-left: 30rpx;
+}
+.toEdit {
+    width: 200rpx;
 }
 .info {
     width: 70%;
     display: flex;
     justify-content:space-around;
-
+    font-size:36rpx;
 }
