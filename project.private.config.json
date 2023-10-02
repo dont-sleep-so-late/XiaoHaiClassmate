@@ -9,6 +9,13 @@
         "miniprogram": {
             "list": [
                 {
+                    "name": "个人信息编辑",
+                    "pathName": "pages/mine-edit/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
                     "name": "我的",
                     "pathName": "pages/mine/index",
                     "query": "",
