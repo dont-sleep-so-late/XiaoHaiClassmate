@@ -4,7 +4,7 @@ page {
         180deg,
         rgba(185, 177, 255, 0.7) 0%,
         rgba(185, 177, 255, 0.5)  1%,
-        rgba(185, 177, 255, 0.1) 50%
+        rgba(185, 177, 255, 0.1) 60%
     )
 }
 .header {
@@ -31,4 +31,11 @@ van-image {
     display: flex;
     justify-content:space-around;
     font-size:36rpx;
+}
+.form-item {
+    border: none;
+    
+}
+.form-item button{
+    background-color: #fff;
 }

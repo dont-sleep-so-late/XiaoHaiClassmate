@@ -22,8 +22,8 @@
         </view>
     </view>
     <view class="form-items">
-        <view class="item"><button>用户协议</button></view>
-        <view class="item"><button open-type="contact" bindcontact="handleContact">联系我们</button></view>
-        <view class="item"><button>关于</button></view>
+        <view class="form-item"><button>用户协议</button></view>
+        <view class="form-item"><button open-type="contact" bindcontact="handleContact">联系我们</button></view>
+        <view class="form-item"><button>关于</button></view>
     </view>
 </view>
